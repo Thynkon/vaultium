@@ -1,0 +1,36 @@
+openssl_conf = openssl_init
+
+[ req ]
+prompt = no
+distinguished_name = ca_dn
+x509_extensions = ca_ext
+
+[ ca_dn ]
+C  = CH
+O  = HEIG-VD
+CN = Root CA
+
+[ ca_ext ]
+basicConstraints = critical,CA:true,pathlen:0
+keyUsage = critical,keyCertSign,cRLSign
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always
+
+# Providers
+[ openssl_init ]
+providers = provider_sect
+
+[ provider_sect ]
+base = base_sect
+default = default_sect
+oqsprovider = oqsprovider_sect
+
+[ base_sect ]
+activate = 1
+
+[ default_sect ]
+activate = 1
+
+[ oqsprovider_sect ]
+activate = 1
+

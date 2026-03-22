@@ -1,0 +1,27 @@
+[package]
+name = "lib"
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+documentation.workspace = true
+
+
+[dependencies]
+aes-gcm-siv.workspace = true
+generic-array.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde_with.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+argon2.workspace = true
+hkdf.workspace = true
+rand.workspace = true
+sha2.workspace = true
+zeroize.workspace = true
+pqcrypto.workspace = true
+pqcrypto-traits.workspace = true
+hex = "0.4.3"
+secrets.workspace = true
+log.workspace = true

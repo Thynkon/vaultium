@@ -1,0 +1,12 @@
+[package]
+name = "packer"
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+documentation.workspace = true
+
+[dependencies]
+lib = { path = "../lib" }
+aes-gcm-siv.workspace = true
+anyhow.workspace = true

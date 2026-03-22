@@ -1,0 +1,23 @@
+services:
+  nginx-hybrid:
+    container_name: nginx-hybrid
+    build:
+      context: ./nginx/
+      dockerfile: ./Dockerfile
+    ports:
+      - "4433:4433"
+    volumes:
+      - ./nginx/certs/data/hybrid/nginx.crt:/opt/nginx/pki/server.crt:ro
+      - ./nginx/certs/data/hybrid/nginx.key:/opt/nginx/pki/server.key:ro
+    extra_hosts:
+      - "host.docker.internal:10.5.0.1"
+    networks:
+      caa-miniproject-hybrid:
+        ipv4_address: 10.5.0.2
+networks:
+  caa-miniproject-hybrid:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
+          gateway: 10.5.0.1

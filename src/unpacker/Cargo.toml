@@ -1,0 +1,13 @@
+[package]
+name = "unpacker"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+lib = { path = "../lib" }
+anyhow.workspace = true
+memfd.workspace = true
+nix.workspace = true
+aes-gcm-siv.workspace = true
+clap.workspace = true
+uuid.workspace = true

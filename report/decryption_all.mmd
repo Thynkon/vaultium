@@ -1,0 +1,18 @@
+sequenceDiagram
+    Client->>Client: generate emepheral key
+    Client->>Client: encrypt emepheral key using server's public key
+
+    Client->>Server: POST /emepheral_key
+    Server->>Server: store emepheral key
+    Server->>Client: OK
+
+    Client->>Server: GET /mek
+
+    Server->>Server: decrypt MEK
+    Server->>Server: encrypt MEK using emepheral key
+    Server->>Server: sign MEK
+    Server->>Client: encrypted MEK and sigature
+
+    Client->>Client: decrypt MEK using emepheral key
+    Client->>Client: generate file key for every file
+    Client->>Client: decrypt files

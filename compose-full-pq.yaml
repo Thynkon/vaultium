@@ -1,0 +1,40 @@
+services:
+  nginx:
+    container_name: nginx
+    build:
+      context: ./nginx/
+      dockerfile: ./Dockerfile
+    ports:
+      - "4433:4433"
+    volumes:
+      - ./nginx/certs/data/full-pq/nginx.crt:/opt/nginx/pki/server.crt:ro
+      - ./nginx/certs/data/full-pq/nginx.key:/opt/nginx/pki/server.key:ro
+    extra_hosts:
+      - "host.docker.internal:10.5.0.1"
+    networks:
+      caa-miniproject-full-pq:
+        ipv4_address: 10.5.0.2
+  curl-full-pq:
+    image: oqs-curl-fullpq
+    build:
+      context: ./nginx/
+      dockerfile: ./Dockerfile-curl
+      args:
+        SIG_ALG: p521_falcon1024
+        KEM_ALG: kyber1024
+    container_name: curl-full-pq
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./nginx/certs/data/full-pq/root-ca.crt:/opt/oqssa/root-ca.crt
+    networks:
+      caa-miniproject-full-pq:
+        ipv4_address: 10.5.0.3
+
+networks:
+  caa-miniproject-full-pq:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
+          gateway: 10.5.0.1

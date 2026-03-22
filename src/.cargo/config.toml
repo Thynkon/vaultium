@@ -1,0 +1,2 @@
+[alias]
+build-secure = "build -p client && build"

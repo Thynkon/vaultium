@@ -1,0 +1,41 @@
+openssl_conf = openssl_init
+
+[ req ]
+prompt = no
+distinguished_name = server_dn
+req_extensions = server_reqext
+
+[ server_dn ]
+C  = CH
+O  = HEIG-VD
+CN = miniproject.caa.thynkon.xyz
+
+[ server_reqext ]
+basicConstraints = CA:false
+keyUsage = critical,digitalSignature,keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = miniproject.caa.thynkon.xyz
+DNS.2 = localhost
+IP.1  = 10.5.0.2
+IP.2  = 127.0.0.1
+
+# Providers
+[ openssl_init ]
+providers = provider_sect
+
+[ provider_sect ]
+base = base_sect
+default = default_sect
+oqsprovider = oqsprovider_sect
+
+[ base_sect ]
+activate = 1
+
+[ default_sect ]
+activate = 1
+
+[ oqsprovider_sect ]
+activate = 1

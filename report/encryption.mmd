@@ -1,0 +1,15 @@
+sequenceDiagram
+    Client->>Client: generate KEKek
+    Client->>Client: encrypt KEK using server's public key
+    Client->>Server: POST /kek
+    Server->>Server: store KEK
+    Server->>Client: OK
+
+    Client->>Client: generate MEK
+    Client->>Client: encrypt MEK using KEK
+    Client->>Server: POST /mek
+    Server->>Server: store encrypted MEK
+    Server->>Client: OK
+
+    Client->>Client: generate file keys
+    Client->>Client: encrypt disk

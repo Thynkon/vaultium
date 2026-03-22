@@ -1,0 +1,33 @@
+[package]
+name = "client"
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+documentation.workspace = true
+
+[dependencies]
+lib = { path = "../lib" }
+anyhow.workspace = true
+argon2.workspace = true
+clap.workspace = true
+inquire.workspace = true
+log.workspace = true
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde_with.workspace = true
+simple_logger.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+url.workspace = true
+uuid.workspace = true
+
+rustls.workspace = true
+rustls-pemfile.workspace = true
+rustls-pki-types.workspace = true
+rustls-native-certs.workspace = true
+
+walkdir.workspace = true
+strum.workspace = true
+strum_macros.workspace = true

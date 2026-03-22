@@ -1,0 +1,79 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="go-ri5hQCNuRu8LM_M0X">
+    <mxGraphModel dx="1412" dy="974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MdtAGTto3NYCCFnBZ766-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MdtAGTto3NYCCFnBZ766-3" target="MdtAGTto3NYCCFnBZ766-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-3" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;KEM-DECAPSULATE&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="292.5" y="300" width="195" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MdtAGTto3NYCCFnBZ766-6" target="MdtAGTto3NYCCFnBZ766-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-6" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;SERVER&#39;S PRIVATE KEY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="60" y="120" width="345" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="MdtAGTto3NYCCFnBZ766-9" target="MdtAGTto3NYCCFnBZ766-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="462.5" y="883" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-8" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;IKM&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MdtAGTto3NYCCFnBZ766-7" vertex="1" connectable="0">
+          <mxGeometry x="0.5" y="-5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-9" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;SHARED SECRET&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="260" y="540" width="260" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MdtAGTto3NYCCFnBZ766-11" target="MdtAGTto3NYCCFnBZ766-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-11" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;HKDF&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="686.5" y="820" width="125" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MdtAGTto3NYCCFnBZ766-14" target="MdtAGTto3NYCCFnBZ766-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="872.5" y="760" />
+              <mxPoint x="780.5" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-13" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;SALT&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MdtAGTto3NYCCFnBZ766-12" vertex="1" connectable="0">
+          <mxGeometry x="-0.3681" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-14" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;$$ 0^{128} $$&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="811.5" y="680" width="111" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MdtAGTto3NYCCFnBZ766-17" target="MdtAGTto3NYCCFnBZ766-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-16" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;INFO&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MdtAGTto3NYCCFnBZ766-15" vertex="1" connectable="0">
+          <mxGeometry x="0.2513" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-17" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;ml-kem-aes-key || UUID&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="466.5" y="680" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-18" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;SHARED SECRET KEY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="576.5" y="990" width="345" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MdtAGTto3NYCCFnBZ766-19" target="MdtAGTto3NYCCFnBZ766-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MdtAGTto3NYCCFnBZ766-19" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;CT&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="466.5" y="120" width="140" height="96" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
