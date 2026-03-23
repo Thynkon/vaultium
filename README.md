@@ -4,7 +4,7 @@ This project contains a **client** and a **server**, both written in Rust, along
 
 ## Report
 
-A detailed report that explains every choice regarding the cryptographic algorithms, nounces, keys size as well as other important information can be found at [report.pdf](./master/report/report.pdf).
+A detailed report that explains every choice regarding the cryptographic algorithms, nounces, keys size as well as other important information can be found at [report.pdf](./report/report.pdf).
 
 ## Repository Layout
 
